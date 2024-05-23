@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bineta Blog</title>
+    <link>https://neneee-prog.github.io/</link>
+    <description>Recent content on Bineta Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 May 2024 15:17:38 -0400</lastBuildDate>
+    <atom:link href="https://neneee-prog.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Premier post</title>
+      <link>https://neneee-prog.github.io/posts/premier_post/</link>
+      <pubDate>Thu, 23 May 2024 15:17:38 -0400</pubDate>
+      <guid>https://neneee-prog.github.io/posts/premier_post/</guid>
+      <description>Ceci est mon premier post via neovim et l&amp;rsquo;invite des commandes&#xA;&amp;lsquo;&amp;lsquo;&amp;lsquo;python N=int(input(&amp;ldquo;saisir un entier naturel N:&amp;rdquo;)) som=0 for i in range(0,N+1): som = som+i print(som) &amp;rsquo;&amp;rsquo;&amp;rsquo;</description>
+    </item>
+  </channel>
+</rss>
