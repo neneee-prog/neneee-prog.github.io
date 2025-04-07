@@ -5,12 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll('.nav-link, .hero-button');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
+            const href = link.getAttribute('href');
+
+            // Vérifie si le lien est une ancre (commence par #)
+            if (href.startsWith('#')) {
+                e.preventDefault(); // Bloque le comportement par défaut uniquement pour les ancres
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
             }
+            // Sinon, laisse le navigateur gérer normalement les liens externes
         });
     });
 
