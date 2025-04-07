@@ -5,51 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bineta Ly - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar">
         <div class="nav-logo">Bineta Ly</div>
         <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a href="resume.html">CV</a></li>
-            <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="projets.html" class="nav-link">Projets</a></li>
+            <li><a href="resume.html" class="nav-link">CV</a></li>
+            <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Section principale -->
     <section class="hero">
-        <h1>Bineta Ly</h1>
-        <p>Élève ingénieur en technologies durables</p>
-        <a href="projets.html" class="hero-button">Découvrir mes projets</a>
+        <div class="hero-content">
+            <img src="Images/photo-profil.jpg" alt="Bineta Ly" class="profile-image">
+            <h1>Bienvenue</h1>
+            <p>Je suis Bineta Ly, étudiante en génie chimique à l’Université d’Ottawa, passionnée par la science appliquée, les solutions durables et l’accessibilité à l’éducation.</p>
+            <a href="#about" class="hero-button">En savoir plus</a>
+        </div>
     </section>
 
-    <!-- Section projets -->
-    <section class="projects" id="projects">
-        <h2>Mes Projets</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('Images/projet1.jpg')"></div>
-                <div class="project-content">
-                    <h3 class="project-title">Smart Grid System</h3>
-                    <p>Optimisation énergétique avec IA</p>
-                </div>
+    <!-- Section À propos -->
+    <section id="about" class="content-section">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Ce qui me motive</h3>
+                <p>J’ai grandi dans un environnement où l’accès à l’eau, à l’électricité et à l’éducation était un défi. C’est ce contexte qui a éveillé chez moi une profonde curiosité scientifique, et une volonté de m’engager concrètement pour améliorer les choses.</p>
+                <p>Aujourd’hui, je m’intéresse aux procédés industriels responsables, à l’impact des technologies éducatives, et à tout ce qui peut rendre le savoir plus accessible, surtout en francophonie.</p>
+
+                <h3>Ce sur quoi je travaille</h3>
+                <p>Je viens tout juste de terminer <strong>UoTranslate</strong>, un prototype de traduction en temps réel pensé pour les étudiants. Et je poursuis avec <strong>ChemCoach AI</strong>, une plateforme intelligente de révision et d’apprentissage adaptée aux cours de génie chimique — particulièrement pour les étudiants francophones qui manquent de ressources dans leur langue.</p>
+
+                <h3>Ce que j’aime explorer</h3>
+                <ul>
+                    <li>Les procédés chimiques et les systèmes énergétiques durables</li>
+                    <li>La valorisation des ressources locales et les innovations accessibles</li>
+                    <li>Les données, l’expérimentation, la modélisation</li>
+                    <li>Écrire, créer, transmettre, inspirer</li>
+                </ul>
+
+                <h3>En bref</h3>
+                <p>Je suis une créative engagée, une ingénieure en devenir qui aime apprendre, comprendre et partager. Je réfléchis actuellement à comment concevoir des ressources accessibles et des outils utiles pour accompagner la transition vers un monde plus équitable et plus durable.</p>
             </div>
-            <div class="project-card">
-                <div class="project-image" style="background-image: url('Images/projet2.jpg')"></div>
-                <div class="project-content">
-                    <h3 class="project-title">Éco-application</h3>
-                    <p>Plateforme de suivi carbone</p>
-                </div>
+            <div class="about-image">
+                <img src="Images/presentation.jpg" alt="Présentation de Bineta Ly" class="about-image">
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2023 Bineta Ly - Tous droits réservés</p>
+        <div class="footer-content">
+            <p>© 2024 Bineta Ly - Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bineta-ly-2a3814221/" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://github.com/neneee-prog" target="_blank" class="social-link">GitHub</a>
+                <a href="mailto:bly058@uottawa.ca" class="social-link">Email</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

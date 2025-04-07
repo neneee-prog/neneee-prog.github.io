@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UoTranslate - Bineta Ly</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">Bineta Ly</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="projets.html" class="nav-link">Projets</a></li>
+            <li><a href="resume.html" class="nav-link">CV</a></li>
+            <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section UoTranslate -->
+    <section id="uotranslate" class="content-section">
+        <h2>UoTranslate — Traduire pour mieux comprendre</h2>
+        <p>
+            UoTranslate est un prototype d’application web conçu pour améliorer l’accessibilité linguistique des étudiants. 
+            Développée dans un contexte universitaire bilingue, UoTranslate est une application web conçue pour traduire des cours en temps réel ou convertir des documents audio/textes en une langue accessible à l’utilisateur, principalement entre l’anglais et le français.
+        </p>
+        <p>
+            Deux fonctionnalités principales :
+        </p>
+        <ul>
+            <li>Traduction en temps réel de la voix via microphone : grâce à Vosk, MarianMT et une synthèse vocale fluide, l’utilisateur voit son discours transcrit, ponctué, traduit et (optionnellement) lu à haute voix, en continu.</li>
+            <li>Traduction de documents audio (WAV, MP3) ou textes (PDF, DOCX, PPTX) : via Wave2Vec2 et ArgosTranslate. Une phrase, une idée, un enregistrement de cours ? UoTranslate vous aide à tout comprendre.</li>
+        </ul>
+        <p>
+            Pourquoi ce projet ? Parce que la barrière de la langue ne devrait jamais être un frein à la réussite académique. À l’Université d’Ottawa, de nombreux étudiants francophones rencontrent des difficultés à suivre des cours en anglais. UoTranslate a été pensé pour eux – mais aussi pour les enseignants, les curieux, et tous ceux qui veulent apprendre, dans la langue qui leur parle.
+        </p>
+        <p>
+            L’interface est simple, épurée et joyeuse. Pas besoin d’être un expert : en un clic, vous pouvez parler, traduire, écouter et comprendre. Et si vous avez manqué un cours ? Aucun souci : déposez votre document ou enregistrement, et laissez UoTranslate le traduire pour vous en quelques secondes.
+        </p>
+        <p>
+            Ce projet est un prototype académique développé avec passion par une équipe d’étudiants en ingénierie. Il combine plusieurs technologies modernes comme :
+        </p>
+        <ul>
+            <li>FastAPI pour le back-end</li>
+            <li>Vosk & Wave2Vec2 pour la transcription vocale</li>
+            <li>MarianMT & ArgosTranslate pour la traduction</li>
+            <li>Silero TTS pour la synthèse vocale</li>
+            <li>Firestore pour la gestion des utilisateurs</li>
+        </ul>
+        <p>
+            Ce projet continue d’évoluer. Prochainement, il intégrera plus de langues, une meilleure interface mobile, et une expérience plus interactive.
+        </p>
+
+        <!-- Boutons d'action -->
+        <div class="action-buttons">
+            <a href="projets.html" class="project-button">Retour aux projets</a>
+            <a href="contact.html" class="project-button">Contactez-moi</a>
+        </div>
+
+        <!-- Carrousel d'images 
+        <div class="carousel">
+            <img src="Images/inscription.PNG" alt="Inscription">
+            <img src="Images/login.png" alt="Connexion">
+            <img src="Images/Interface.png" alt="Interface principale">
+            <img src="Images/console traduction.png" alt="Console de traduction">
+            <img src="Images/partial-traduction.png" alt="Traduction partielle">
+            <img src="Images/karlmax.png" alt="KarlMax">
+        </div> -->
+
+        <!-- Vidéo de démonstration -->
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/h98JeLK8qnM?feature=oembed" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Bineta Ly - Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bineta-ly-2a3814221/" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://github.com/neneee-prog" target="_blank" class="social-link">GitHub</a>
+                <a href="mailto:bly058@uottawa.ca" class="social-link">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

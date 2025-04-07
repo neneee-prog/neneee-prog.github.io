@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mécanique des Fluides - Bineta Ly</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">Bineta Ly</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="projets.html" class="nav-link">Projets</a></li>
+            <li><a href="resume.html" class="nav-link">CV</a></li>
+            <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Mécanique des Fluides -->
+    <section id="fluides" class="content-section">
+        <h2>Projet de Mécanique des Fluides</h2>
+        <h3>Système de fluidisation gaz-solide sous pression</h3>
+        <p>
+            Dans le cadre du cours CHG2712, nous avons conçu un système de fluidisation gaz-solide utilisant de l’argon comme gaz et du carbonate de calcium comme solide. L’objectif principal était de déterminer le diamètre optimal du tuyau pour assurer la fluidisation à 10 bar et 20 bar, tout en respectant les conditions de sécurité et d’efficacité industrielle.
+        </p>
+
+        <!-- Objectifs techniques -->
+        <h4>Objectifs techniques</h4>
+        <table class="styled-table centered-table">
+            <tr><th>Élément analysé</th><th>Détails</th></tr>
+            <tr><td>Gaz utilisé</td><td>Argon</td></tr>
+            <tr><td>Solide</td><td>Carbonate de calcium (CaCO₃)</td></tr>
+            <tr><td>Pressions étudiées</td><td>10 bar et 20 bar</td></tr>
+            <tr><td>Paramètres à optimiser</td><td>Diamètre nominal, temps de séjour, pertes de charge, puissance requise</td></tr>
+        </table>
+
+        <!-- Résultats clés -->
+        <h4>Résultats clés</h4>
+        <table class="styled-table centered-table">
+            <tr><th>Pression</th><th>Diamètre optimal</th><th>Temps de séjour</th><th>Puissance nécessaire</th></tr>
+            <tr><td>10 bar</td><td>1" (Schedule 40)</td><td>45,9 s</td><td>290 W</td></tr>
+            <tr><td>20 bar</td><td>¾"</td><td>58,9 s</td><td>456 W</td></tr>
+        </table>
+
+        <!-- Méthodologie -->
+        <h4>Méthodologie</h4>
+        <ul>
+            <li>Utilisation d’Excel Solver pour optimiser les calculs.</li>
+            <li>Application des équations de Bernoulli, Richardson-Zaki, et pertes de charge locales.</li>
+            <li>Prise en compte de la géométrie industrielle (tuyaux Schedule 40).</li>
+            <li>Intégration d’un compresseur FIMA et d’un échangeur de chaleur.</li>
+        </ul>
+
+        <!-- Leçons et améliorations futures -->
+        <h4>Leçons et améliorations futures</h4>
+        <table class="styled-table centered-table">
+            <tr><th>Observation</th><th>Piste d’amélioration proposée</th></tr>
+            <tr><td>Influence des pertes locales élevée</td><td>Étudier des géométries alternatives.</td></tr>
+            <tr><td>Estimation manuelle de la sphéricité</td><td>Intégrer des méthodes de mesure expérimentales.</td></tr>
+            <tr><td>Simulation à débit constant</td><td>Ajouter la compressibilité pour modéliser d’autres gaz.</td></tr>
+            <tr><td>Application uniquement à l’argon</td><td>Étendre l’étude à l’azote ou à l’air comprimé.</td></tr>
+        </table>
+
+        <!-- Technologies utilisées -->
+        <h4>Technologies utilisées</h4>
+        <ul>
+            <li>Excel Solver (modélisation, optimisation).</li>
+            <li>Équation de Darcy-Weisbach.</li>
+            <li>Standards industriels Schedule.</li>
+            <li>Fiche technique du compresseur FIMA.</li>
+        </ul>
+
+        <!-- Images -->
+        <div class="image-container">
+            <img src="images/Image1 txy.png" alt="Projet de Mécanique des Fluides" class="styled-image">
+            <p class="image-caption">Figure 1 - Prototype du système de fluidisation gaz-solide.</p>
+        </div>
+
+        <!-- Boutons d'action -->
+        <div class="action-buttons">
+            <a href="projets.html" class="project-button">Retour aux projets</a>
+            <a href="contact.html" class="project-button">Contactez-moi</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Bineta Ly - Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bineta-ly-2a3814221/" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://github.com/neneee-prog" target="_blank" class="social-link">GitHub</a>
+                <a href="mailto:bly058@uottawa.ca" class="social-link">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
